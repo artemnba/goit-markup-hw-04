@@ -182,10 +182,11 @@ p {
     url(../img/overlay.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* section-advantage */
-.icon-item {
+.svg-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,10 +195,6 @@ p {
   width: 270px;
   background: var(--white-bg-color);
   border-radius: 4px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 100px;
-  padding-left: 100px;
   margin-bottom: 30px;
 }
 
@@ -277,7 +274,6 @@ p {
   text-align: center;
 }
 .name {
-  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -315,17 +311,13 @@ p {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--blue-bg-color);
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--white-colortext);
-  fill: var(--body-color);
+  color: var(--body-color);
 }
 
 .social-list-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 /* client */
 .ourclient {
@@ -342,7 +334,7 @@ p {
   text-align: center;
 }
 .client-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .client-list {
   display: flex;
@@ -360,10 +352,10 @@ p {
   width: 170px;
 }
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
-  border: var(--blue-bg-color);
-  fill: var(--blue-colortext);
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--blue-bg-color);
+  color: var(--blue-colortext);
 }
 /* portfoliomain */
 .menu-button {
@@ -426,7 +418,8 @@ p {
   display: block;
 }
 
-.menu-project-link:hover {
+.menu-project-link:hover,
+.menu-project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -441,7 +434,6 @@ p {
 .flex {
   display: flex;
   align-items: baseline;
-  column-gap: 70px;
 }
 
 .studiofooter {
@@ -450,10 +442,6 @@ p {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-.flexdiv {
-  display: flex;
-  flex-direction: column;
 }
 
 address {
